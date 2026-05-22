@@ -1,0 +1,45 @@
+# Binarios compilados
+*.o
+*.out
+a.out
+
+# Ejecutables sin extension (resultados de gcc -o nombre)
+01_Structs/producto
+01_Structs/libro
+01_Structs/alumno
+01_Structs/empleado
+01_Structs/vehiculo
+01_Structs/persona
+01_Structs/pelicula
+02_Ordenamientos/burbuja_int
+02_Ordenamientos/burbuja_struct
+02_Ordenamientos/seleccion_int
+02_Ordenamientos/seleccion_struct
+02_Ordenamientos/insercion_int
+02_Ordenamientos/insercion_struct
+03_Busquedas/lineal_int
+03_Busquedas/lineal_struct
+03_Busquedas/binaria_int
+03_Busquedas/binaria_struct
+03_Busquedas/contar_ocurrencias
+04_Operaciones_CRUD/agregar
+04_Operaciones_CRUD/eliminar
+04_Operaciones_CRUD/modificar
+04_Operaciones_CRUD/listar
+04_Operaciones_CRUD/menu_interactivo
+05_Entradas/lectura_segura
+06_Ejemplos_Completos/crud_productos
+06_Ejemplos_Completos/crud_libros
+06_Ejemplos_Completos/crud_alumnos_notas
+plantilla_base
+crud
+test
+
+# Editores
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Debug
+*.dSYM/
