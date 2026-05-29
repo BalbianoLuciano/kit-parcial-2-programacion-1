@@ -45,10 +45,25 @@ Este repo te da plantillas listas para cada pieza, más 3 programas completos re
 | **`04_Operaciones_CRUD/`** | Las 5 operaciones aisladas: agregar, eliminar, modificar, listar, menú interactivo. |
 | **`05_Entradas/`** | Lectura segura de int y strings, limpieza de buffer (`scanf` vs `fgets`). |
 | **`06_Ejemplos_Completos/`** | 3 programas armados de punta a punta: productos, libros, alumnos con notas. |
+| **`07_Modelos_Parcial/`** | Modelos resueltos estilo 2° parcial: orden + búsqueda binaria + doble criterio, CRUD con menú, y arreglo de enteros con estadísticas. |
+| **`TIPS_C.md`** | 💡 Funciones por librería (`<...>`) + trampas de C (comillas simples vs dobles, `=` vs `==`, el `\n` de `scanf`, etc.). |
+| **`.devcontainer/` + `.vscode/`** | Config lista para **GitHub Codespaces**: gcc, debugger y botón ▶ para compilar/correr sin instalar nada. |
 
 ---
 
-## 🔧 Compilar y ejecutar
+## 💻 Usarlo en GitHub Codespaces (recomendado para el parcial)
+
+Este repo ya viene configurado para abrirse en **GitHub Codespaces** (el "VSCode de GitHub" en la nube) con todo listo para compilar y ejecutar C — sin instalar nada en tu compu.
+
+1. En la página del repo en GitHub: botón **`<> Code` → pestaña `Codespaces` → `Create codespace`**.
+2. Esperá que levante el contenedor (trae `gcc`, `gdb` y las extensiones automáticamente).
+3. Abrí cualquier `.c` y:
+   - apretá el botón **▶** (Code Runner) para **compilar y ejecutar**, o
+   - apretá **F5** para **debuggear** paso a paso con breakpoints.
+
+> La terminal integrada queda lista para que `scanf` lea lo que escribís. Detalle de la config en `.devcontainer/` y `.vscode/`.
+
+## 🔧 Compilar y ejecutar (terminal)
 
 Cada `.c` compila independientemente:
 
