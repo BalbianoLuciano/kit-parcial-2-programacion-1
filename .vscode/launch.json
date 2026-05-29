@@ -1,0 +1,28 @@
+{
+  // Configuracion de DEBUG (F5). Compila el archivo abierto y lo corre con gdb,
+  // permitiendo poner breakpoints y ver variables paso a paso.
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C: debuggear archivo actual (gdb)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${fileDirname}/${fileBasenameNoExtension}",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${fileDirname}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "setupCommands": [
+        {
+          "description": "Habilitar formato legible en gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ],
+      // Compila (con simbolos -g) antes de debuggear.
+      "preLaunchTask": "C: compilar archivo actual"
+    }
+  ]
+}

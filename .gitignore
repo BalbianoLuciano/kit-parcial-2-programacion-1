@@ -17,6 +17,14 @@ a.out
 02_Ordenamientos/seleccion_struct
 02_Ordenamientos/insercion_int
 02_Ordenamientos/insercion_struct
+02_Ordenamientos/doble
+02_Ordenamientos/ordenamiento_doble_criterio
+07_Modelos_Parcial/modelo1
+07_Modelos_Parcial/modelo2
+07_Modelos_Parcial/modelo3
+07_Modelos_Parcial/modelo_empleados_orden_busqueda
+07_Modelos_Parcial/modelo_canciones_crud
+07_Modelos_Parcial/modelo_temperaturas_int
 03_Busquedas/lineal_int
 03_Busquedas/lineal_struct
 03_Busquedas/binaria_int
@@ -36,7 +44,12 @@ crud
 test
 
 # Editores
-.vscode/
+# Ignoramos .vscode/ EXCEPTO la config del kit (tareas, debug, extensiones).
+.vscode/*
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/settings.json
 .idea/
 *.swp
 .DS_Store

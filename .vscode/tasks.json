@@ -1,0 +1,36 @@
+{
+  // Tareas de compilacion. Se ejecutan con: Terminal > Run Task...  (o Ctrl/Cmd+Shift+B)
+  "version": "2.0.0",
+  "tasks": [
+    {
+      // Compila el archivo .c que tengas abierto, con todos los warnings.
+      "label": "C: compilar archivo actual",
+      "type": "shell",
+      "command": "gcc",
+      "args": [
+        "-Wall",
+        "-Wextra",
+        "-std=c11",
+        "-g",
+        "${file}",
+        "-o",
+        "${fileDirname}/${fileBasenameNoExtension}"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": ["$gcc"],
+      "detail": "gcc -Wall -Wextra -std=c11 -g sobre el archivo abierto"
+    },
+    {
+      // Compila y ademas ejecuta, todo en la terminal integrada.
+      "label": "C: compilar y ejecutar archivo actual",
+      "type": "shell",
+      "command": "gcc -Wall -Wextra -std=c11 -g \"${file}\" -o \"${fileDirname}/${fileBasenameNoExtension}\" && \"${fileDirname}/${fileBasenameNoExtension}\"",
+      "group": "build",
+      "problemMatcher": ["$gcc"],
+      "detail": "Compila y corre el archivo abierto"
+    }
+  ]
+}

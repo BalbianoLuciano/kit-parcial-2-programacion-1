@@ -1,0 +1,33 @@
+{
+  // Entorno listo para programar y ejecutar C en GitHub Codespaces.
+  // Al abrir el repo en Codespaces, GitHub levanta este contenedor con gcc,
+  // gdb y las extensiones ya instaladas. No hay que instalar nada a mano.
+  "name": "C - Programacion I (Parcial)",
+
+  // Imagen oficial de devcontainers para C/C++: ya trae gcc, g++, gdb y make.
+  "image": "mcr.microsoft.com/devcontainers/cpp:debian-12",
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.cpptools",              // IntelliSense + debugger para C/C++
+        "ms-vscode.cpptools-extension-pack",
+        "formulahendry.code-runner"        // boton ▶ para compilar y correr al toque
+      ],
+      "settings": {
+        // Code Runner: compila con warnings y ejecuta en la terminal integrada
+        // (necesario para que scanf lea lo que escribis).
+        "code-runner.executorMap": {
+          "c": "cd $dir && gcc -Wall -Wextra -std=c11 \"$fileName\" -o \"$fileNameWithoutExt\" && \"$dir$fileNameWithoutExt\""
+        },
+        "code-runner.runInTerminal": true,
+        "code-runner.saveFileBeforeRun": true,
+        "code-runner.clearPreviousOutput": true,
+        "C_Cpp.default.cStandard": "c11"
+      }
+    }
+  },
+
+  // Verifica que el compilador quedo disponible al crear el contenedor.
+  "postCreateCommand": "gcc --version"
+}

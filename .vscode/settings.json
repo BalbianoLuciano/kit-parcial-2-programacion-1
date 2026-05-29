@@ -1,0 +1,12 @@
+{
+  // Code Runner: compila con warnings y ejecuta en la terminal integrada.
+  // runInTerminal=true es CLAVE: sin esto, scanf no puede leer lo que escribis.
+  "code-runner.executorMap": {
+    "c": "cd $dir && gcc -Wall -Wextra -std=c11 \"$fileName\" -o \"$fileNameWithoutExt\" && \"$dir$fileNameWithoutExt\""
+  },
+  "code-runner.runInTerminal": true,
+  "code-runner.saveFileBeforeRun": true,
+  "code-runner.clearPreviousOutput": true,
+  "C_Cpp.default.cStandard": "c11",
+  "files.encoding": "utf8"
+}

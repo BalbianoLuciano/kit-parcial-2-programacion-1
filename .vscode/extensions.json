@@ -1,0 +1,8 @@
+{
+  // Extensiones recomendadas. VSCode las ofrece al abrir el repo.
+  "recommendations": [
+    "ms-vscode.cpptools",
+    "ms-vscode.cpptools-extension-pack",
+    "formulahendry.code-runner"
+  ]
+}
