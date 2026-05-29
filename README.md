@@ -48,6 +48,7 @@ Este repo te da plantillas listas para cada pieza, más 3 programas completos re
 | **`07_Modelos_Parcial/`** | Modelos resueltos estilo 2° parcial: orden + búsqueda binaria + doble criterio, CRUD con menú, y arreglo de enteros con estadísticas. |
 | **`TIPS_C.md`** | 💡 Funciones por librería (`<...>`) + trampas de C (comillas simples vs dobles, `=` vs `==`, el `\n` de `scanf`, etc.). |
 | **`.devcontainer/` + `.vscode/`** | Config lista para **GitHub Codespaces**: gcc, debugger y botón ▶ para compilar/correr sin instalar nada. |
+| **`CODESPACES.md`** | 💻 Pasos para abrir el repo en Codespaces el día del parcial (y por qué tocar `.` NO sirve). |
 
 ---
 
@@ -62,6 +63,8 @@ Este repo ya viene configurado para abrirse en **GitHub Codespaces** (el "VSCode
    - apretá **F5** para **debuggear** paso a paso con breakpoints.
 
 > La terminal integrada queda lista para que `scanf` lea lo que escribís. Detalle de la config en `.devcontainer/` y `.vscode/`.
+>
+> ⚠️ **Ojo: tocar `.` (que abre `github.dev`) NO sirve** — ese editor no tiene terminal ni compilador, así que no podés correr C. Pasos completos y consejos para el día del parcial en **[`CODESPACES.md`](./CODESPACES.md)**.
 
 ## 🔧 Compilar y ejecutar (terminal)
 
