@@ -36,6 +36,7 @@
 | "Ordenar alfabéticamente / por nombre" | `02_Ordenamientos/burbuja_struct.c` (variante `strcmp`) | Cambiar la comparación por `strcmp(a, b) > 0` |
 | "Ordenar de menor a mayor precio / sueldo" | `02_Ordenamientos/burbuja_struct.c` (variante `float`) | Comparación `>` entre `float` |
 | "Ordenar de mayor a menor" | Cualquiera de los anteriores | Invertir el signo de la comparación: `<` en vez de `>` |
+| "Ordenar por apellido y nombre" / "y si se repite, por X" (doble criterio) | `02_Ordenamientos/ordenamiento_doble_criterio.c` | `if (cmp > 0 \|\| (cmp == 0 && segundo_criterio))` |
 | "Ordenar usando método de selección" | `02_Ordenamientos/seleccion_struct.c` | — |
 | "Ordenar usando método de inserción" | `02_Ordenamientos/insercion_struct.c` | — |
 | Te dicen "el más simple" o no especifican | Usá **burbuja** | Más fácil de recordar y explicar |

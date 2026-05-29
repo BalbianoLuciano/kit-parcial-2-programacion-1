@@ -20,6 +20,20 @@ Tres algoritmos clásicos en dos sabores: con `int[]` (para entender la lógica 
 | `seleccion_struct.c` | Arreglo de structs. |
 | `insercion_int.c` | Arreglo de enteros. |
 | `insercion_struct.c` | Arreglo de structs. |
+| `ordenamiento_doble_criterio.c` | **Orden por dos criterios**: primario + desempate. Ej: por apellido y, a igual apellido, por nombre (o por legajo). |
+
+## Ordenar por DOS criterios (apellido y, si se repite, otra cosa)
+
+Cuando piden algo como `Acosta 1, Acosta 2, Acosta 3, Balbiano 1, Balbiano 2` (primero por un campo y, **a igual valor**, por un segundo campo), la idea está en el `if` del comparador:
+
+```c
+int cmp = strcmp(arr[j].apellido, arr[j + 1].apellido);   // criterio 1
+if (cmp > 0 || (cmp == 0 && strcmp(arr[j].nombre, arr[j + 1].nombre) > 0))
+//          ▲                  ▲
+//   apellido mayor    SOLO si los apellidos empatan (cmp == 0), desempata por nombre
+```
+
+> ⚠️ No compares solo `apellido[0]` (la primera letra): "Gomez" y "Garcia" empezarían iguales. Usá `strcmp` sobre el string completo. Ejemplo completo en `ordenamiento_doble_criterio.c`.
 
 ## Cómo cambiar el criterio de ordenamiento
 
