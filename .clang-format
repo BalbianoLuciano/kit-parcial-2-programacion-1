@@ -1,0 +1,14 @@
+# Estilo de formato para C (lo aplica clang-format, el "prettier" de C).
+# Pensado para que el codigo quede igual al del kit:
+#   - indentacion de 2 espacios
+#   - llaves en linea aparte (estilo Allman)
+#   - sin cortar lineas largas (los printf quedan en una sola linea)
+BasedOnStyle: LLVM
+IndentWidth: 2
+TabWidth: 2
+UseTab: Never
+BreakBeforeBraces: Allman
+ColumnLimit: 0
+AllowShortFunctionsOnASingleLine: None
+AllowShortIfStatementsOnASingleLine: false
+AllowShortLoopsOnASingleLine: false

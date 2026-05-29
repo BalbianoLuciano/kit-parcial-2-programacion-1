@@ -10,9 +10,10 @@
   "customizations": {
     "vscode": {
       "extensions": [
-        "ms-vscode.cpptools",              // IntelliSense + debugger para C/C++
+        "ms-vscode.cpptools",              // IntelliSense (autocomplete) + debugger + clang-format
         "ms-vscode.cpptools-extension-pack",
-        "formulahendry.code-runner"        // boton ▶ para compilar y correr al toque
+        "formulahendry.code-runner",       // boton ▶ para compilar y correr al toque
+        "usernamehw.errorlens"             // muestra errores/warnings al lado de la linea
       ],
       "settings": {
         // Code Runner: compila con warnings y ejecuta en la terminal integrada
@@ -23,7 +24,16 @@
         "code-runner.runInTerminal": true,
         "code-runner.saveFileBeforeRun": true,
         "code-runner.clearPreviousOutput": true,
-        "C_Cpp.default.cStandard": "c11"
+        "C_Cpp.default.cStandard": "c11",
+
+        // Formateo automatico al guardar (clang-format, ver archivo .clang-format)
+        "editor.formatOnSave": true,
+        "[c]": {
+          "editor.defaultFormatter": "ms-vscode.cpptools"
+        },
+        // Linter extra mientras escribis
+        "C_Cpp.codeAnalysis.clangTidy.enabled": true,
+        "C_Cpp.codeAnalysis.runAutomatically": true
       }
     }
   },

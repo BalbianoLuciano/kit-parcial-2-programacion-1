@@ -1,8 +1,9 @@
 {
   // Extensiones recomendadas. VSCode las ofrece al abrir el repo.
   "recommendations": [
-    "ms-vscode.cpptools",
+    "ms-vscode.cpptools",              // IntelliSense (autocomplete) + linter + clang-format
     "ms-vscode.cpptools-extension-pack",
-    "formulahendry.code-runner"
+    "formulahendry.code-runner",       // boton ▶ para compilar y correr
+    "usernamehw.errorlens"             // muestra errores/warnings al lado de la linea
   ]
 }
