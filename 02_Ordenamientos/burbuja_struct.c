@@ -86,11 +86,11 @@ void imprimir(struct Producto arr[], int n, const char *etiqueta)
 int main()
 {
   struct Producto inventario[MAX] = {
-      {103, "Mouse",       15.75},
-      {101, "Monitor",    120.00},
+      {103, "Mouse", 15.75},
+      {101, "Monitor", 120.00},
       {105, "Auriculares", 65.50},
-      {102, "Teclado",     25.50},
-      {104, "Webcam",      55.00}};
+      {102, "Teclado", 25.50},
+      {104, "Webcam", 55.00}};
   int n = 5;
 
   imprimir(inventario, n, "Original");
